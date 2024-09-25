@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+}
+
+.playagainbtn{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    display: none;
+    color: white;
+    border: 5px black solid;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+    animation: popup 1s;
+    cursor: pointer;
+}
+
+@keyframes popup {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.lost{
+    font-size: 70px;
+    color: darkblue;
+}
